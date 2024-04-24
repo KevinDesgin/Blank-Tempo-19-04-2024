@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     
-    <head>
-    <title>Icon Template Square</title>
+    <head> 
+    <title></title>
         <style>
             .row{
                 width:720px;
@@ -15,7 +15,7 @@
             }
         </style>
     </head>
-
+    <body style="background-color:  #0000B3">
     <body>
 
         <div class="row">
@@ -42,7 +42,7 @@
 
 <script>
 const slide_sound = document.createElement ("audio")
-slide_sound.src = "img/Wind_blowing.mp3"
+slide_sound.src = "img/Windblowing.mp3"
 
 const circle_element = document.getElementById("soundf1")    
 circle_element.onpointerover = () => {
@@ -52,6 +52,7 @@ circle_element.onpointerover = () => {
 circle_element.onpointerout = () => {
     circle_element.src = "img/SoundF1.png"
 }
-
-
+circle_element.onpointerdown = () => {
+        slide_sound.play ()
+}
 </script>
