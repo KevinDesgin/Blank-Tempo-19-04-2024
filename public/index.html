@@ -41,6 +41,16 @@
 </html>
 
 <script>
+const slide_sound 
+
 const circle_element = document.getElementById("soundf1")    
-console.dir ("soundf1") 
+circle_element.onpointerover = () => {
+    circle_element.src = "img/SoundF2.png"
+    console.log ("hello")
+}
+circle_element.onpointerout = () => {
+    circle_element.src = "img/SoundF1.png"
+}
+
+
 </script>
