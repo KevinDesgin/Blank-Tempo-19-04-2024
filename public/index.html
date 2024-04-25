@@ -70,6 +70,9 @@ circle_element.onpointerdown = () => {
     </script>
 
 <script>
+const twink_sound = document.createElement ("audio")
+twink_sound.src = "mp3/twinkling_01.mp3"
+
  const cat = document.getElementById("cat")    
  document.getElementById("cat").onpointerover = () => {
        document.getElementById("cat").src = "img/CatF2.png"
@@ -77,6 +80,9 @@ circle_element.onpointerdown = () => {
        document.getElementById("cat").onpointerout = () => {
        document.getElementById("cat").src = "img/CatF1.png"
        }
+       document.getElementById("cat").onpointerdown = () => {
+       twink_sound.play ()
+       } 
       
     </script>
 
@@ -131,6 +137,9 @@ info_sound.src = "mp3/Ding_01.mp3"
        </script>
 
 <script>
+const setting_sound = document.createElement ("audio")
+setting_sound.src = "mp3/Clanking_01.mp3"
+
     const setting = document.getElementById("setting")    
     document.getElementById("setting").onpointerover = () => {
        document.getElementById("setting").src = "img/SettingF2.png"
@@ -138,7 +147,9 @@ info_sound.src = "mp3/Ding_01.mp3"
        document.getElementById("setting").onpointerout = () => {
        document.getElementById("setting").src = "img/SettingF1.png"
        }
-      
+       document.getElementById("setting").onpointerdown = () => {
+       setting_sound.play ()
+       }
        </script>
 
 <script>
