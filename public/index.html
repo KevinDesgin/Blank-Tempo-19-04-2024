@@ -58,17 +58,34 @@ circle_element.onpointerdown = () => {
 </script>
 
 <script>
-    const slide_sound = document.createElement ("audio")
-    slide_sound.src = "img/Windblowing.mp3"
-    
-    const circle_element = document.getElementById("build")    
-    circle_element.onpointerover = () => {
-        circle_element.src = "img/BuildF2.png"
+ const img = document.getElementById("build")    
+ document.getElementById("build").onpointerover = () => {
+    document.getElementById("build").src = "img/BuildF2.png"
     }
-    circle_element.onpointerout = () => {
-        circle_element.src = "img/BuildF1.png"
+    document.getElementById("build").onpointerout = () => {
+    document.getElementById("build").src = "img/BuildF1.png"
     }
-    circle_element.onpointerdown = () => {
-            slide_sound.play ()
-    }
+   
     </script>
+
+<script>
+ const img = document.getElementById("cat")    
+ document.getElementById("cat").onpointerover = () => {
+       document.getElementById("cat").src = "img/CatF2.png"
+       }
+       document.getElementById("cat").onpointerout = () => {
+       document.getElementById("cat").src = "img/CatF1.png"
+       }
+      
+    </script>
+
+<script>
+    const img = document.getElementById("friend")    
+    document.getElementById("friend").onpointerover = () => {
+       document.getElementById("friend").src = "img/friendF2.png"
+       }
+       document.getElementById("friend").onpointerout = () => {
+       document.getElementById("friend").src = "img/FriendF1.png"
+       }
+      
+       </script>
