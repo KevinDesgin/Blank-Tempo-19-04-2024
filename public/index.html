@@ -42,7 +42,7 @@
 
 <script>
 const slide_sound = document.createElement ("audio")
-slide_sound.src = "img/Windblowing.mp3"
+slide_sound.src = "mp3/Windblowing.mp3"
 
 const circle_element = document.getElementById("sound")    
 circle_element.onpointerover = () => {
@@ -53,11 +53,12 @@ circle_element.onpointerout = () => {
     circle_element.src = "img/SoundF1.png"
 }
 circle_element.onpointerdown = () => {
-        slide_sound.play ()
+       slide_sound.play ()
 }
 </script>
 
 <script>
+
  const build = document.getElementById("build")    
  document.getElementById("build").onpointerover = () => {
     document.getElementById("build").src = "img/BuildF2.png"
@@ -92,6 +93,9 @@ circle_element.onpointerdown = () => {
 
 
 <script>
+const info_sound = document.createElement ("audio")
+info_sound.src = "mp3/Ding_01.mp3"
+
     const info = document.getElementById("info")    
     document.getElementById("info").onpointerover = () => {
        document.getElementById("info").src = "img/InfoF2.png"
@@ -99,7 +103,9 @@ circle_element.onpointerdown = () => {
        document.getElementById("info").onpointerout = () => {
        document.getElementById("info").src = "img/InfoF1.png"
        }
-      
+       document.getElementById("info").onpointerdown = () => {
+       info_sound.play ()
+       } 
        </script>
 
 <script>
@@ -136,12 +142,17 @@ circle_element.onpointerdown = () => {
        </script>
 
 <script>
+const time_sound = document.createElement ("audio")
+time_sound.src = "mp3/Ticking_01.mp3"
     const time = document.getElementById("time")    
     document.getElementById("time").onpointerover = () => {
        document.getElementById("time").src = "img/TimeF2.png"
        }
        document.getElementById("time").onpointerout = () => {
        document.getElementById("time").src = "img/TimeF1.png"
+       }
+       document.getElementById("time").onpointerdown = () => {
+       time_sound.play ()
        }
       
        </script>
