@@ -19,21 +19,21 @@
     <body>
 
         <div class="row">
-            <div class="image-container"><img id="soundf1" src="img/SoundF1.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/tri.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/squ.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="sound" src="img/SoundF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="build" src="img/BuildF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="cat" src="img/CatF1.png" height="200" width="200"/></div>
         </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="friend" src="img/FriendF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="info" src="img/InfoF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="media" src="img/MediaF1.png" height="200" width="200"/></div>
             </div>
 
         <div class="row">
-            <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-            <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="setting" src="img/SettingF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="time" src="img/TimeF1.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="music" src="img/MusicF1.png" height="200" width="200"/></div>
         </div>
         
     </body>
@@ -44,7 +44,7 @@
 const slide_sound = document.createElement ("audio")
 slide_sound.src = "img/Windblowing.mp3"
 
-const circle_element = document.getElementById("soundf1")    
+const circle_element = document.getElementById("sound")    
 circle_element.onpointerover = () => {
     circle_element.src = "img/SoundF2.png"
     console.log ("hello")
@@ -56,3 +56,19 @@ circle_element.onpointerdown = () => {
         slide_sound.play ()
 }
 </script>
+
+<script>
+    const slide_sound = document.createElement ("audio")
+    slide_sound.src = "img/Windblowing.mp3"
+    
+    const circle_element = document.getElementById("build")    
+    circle_element.onpointerover = () => {
+        circle_element.src = "img/BuildF2.png"
+    }
+    circle_element.onpointerout = () => {
+        circle_element.src = "img/BuildF1.png"
+    }
+    circle_element.onpointerdown = () => {
+            slide_sound.play ()
+    }
+    </script>
