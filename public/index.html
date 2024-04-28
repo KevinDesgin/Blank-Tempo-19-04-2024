@@ -58,6 +58,8 @@ circle_element.onpointerdown = () => {
 </script>
 
 <script>
+const water_sound = document.createElement ("audio")
+water_sound.src = "mp3/WaterRunning_01.mp3"
 
  const build = document.getElementById("build")    
  document.getElementById("build").onpointerover = () => {
@@ -66,8 +68,10 @@ circle_element.onpointerdown = () => {
     document.getElementById("build").onpointerout = () => {
     document.getElementById("build").src = "img/BuildF1.png"
     }
-   
-    </script>
+    document.getElementById("build").onpointerdown = () => {
+       water_sound.play ()
+       } 
+</script>
 
 <script>
 const twink_sound = document.createElement ("audio")
@@ -87,6 +91,9 @@ twink_sound.src = "mp3/Twinkling_01.mp3"
     </script>
 
 <script>
+    const hm_sound = document.createElement ("audio")
+hm_sound.src = "mp3/Hm_01.mp3"
+
     const friend = document.getElementById("friend")    
     document.getElementById("friend").onpointerover = () => {
        document.getElementById("friend").src = "img/FriendF2.png"
@@ -94,7 +101,9 @@ twink_sound.src = "mp3/Twinkling_01.mp3"
        document.getElementById("friend").onpointerout = () => {
        document.getElementById("friend").src = "img/FriendF1.png"
        }
-      
+       document.getElementById("friend").onpointerdown = () => {
+       hm_sound.play ()
+       }
        </script>
 
 
@@ -115,6 +124,9 @@ info_sound.src = "mp3/Ding_01.mp3"
        </script>
 
 <script>
+    const keytap_sound = document.createElement ("audio")
+keytap_sound.src = "mp3/Keytap_01.mp3"
+
     const medi = document.getElementById("media")    
     document.getElementById("media").onpointerover = () => {
        document.getElementById("media").src = "img/MediaF2.png"
@@ -122,7 +134,9 @@ info_sound.src = "mp3/Ding_01.mp3"
        document.getElementById("media").onpointerout = () => {
        document.getElementById("media").src = "img/MediaF1.png"
        }
-      
+       document.getElementById("media").onpointerdown = () => {
+       keytap_sound.play ()
+       }
        </script>
 
        <script>
@@ -169,6 +183,9 @@ time_sound.src = "mp3/Ticking_01.mp3"
        </script>
 
 <script>
+    const piano_sound = document.createElement ("audio")
+piano_sound.src = "mp3/Piano_01.mp3"
+
     const music = document.getElementById("music")    
     document.getElementById("music").onpointerover = () => {
        document.getElementById("music").src = "img/MusicF2.png"
@@ -176,5 +193,7 @@ time_sound.src = "mp3/Ticking_01.mp3"
        document.getElementById("music").onpointerout = () => {
        document.getElementById("music").src = "img/MusicF1.png"
        }
-      
+       document.getElementById("music").onpointerdown = () => {
+       piano_sound.play ()
+       }
        </script>
